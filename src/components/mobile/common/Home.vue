@@ -1,5 +1,6 @@
 <template>
     <v-container fluid style="padding:0">
+        <Header/>
         <v-layout>
             <v-flex>
                 <full-page ref="fullpage" id="fullpage" :options="options">
@@ -28,22 +29,40 @@
                         </v-flex>
                     </v-layout>
                     <v-layout class="section home_3">
-                        <v-flex style="text-align:center">
-                            <v-flex class="mb-3" style="font-size:35px;font-weight:600">Recruitment</v-flex>
-                            <v-flex class="mb-10" style="font-size:15px">팩투커스와 함께 할 자유로운 인재를 기다립니다.</v-flex>
-                            <v-layout justify-center>
-                                <v-flex class="py-2" xs5 style="border: 1px solid #FFFFFF;border-radius: 57px;">READ MORE </v-flex>
+                        <v-flex style="text-align:center;height:100%">
+                            <v-layout align-center class="home_3_1" style="height:50%">
+                                <v-flex>
+                                    <v-flex class="mb-3" style="font-size:35px;font-weight:600">Recruitment</v-flex>
+                                    <v-flex class="mb-10" style="font-size:15px">팩투커스와 함께 할 자유로운 인재를 기다립니다.</v-flex>
+                                    <v-layout justify-center>
+                                        <v-flex @click="moveNavigation(1)" class="py-2" xs5 style="border: 1px solid #FFFFFF;border-radius: 57px;font-size:12px">READ MORE <span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
+                                    </v-layout>
+                                </v-flex>
+                            </v-layout>
+                            <v-layout class="home_3_1_1" style="height:50%">
+                                <v-flex xs6 class="home_4_1">
+                                    <v-layout align-center style="height:100%">
+                                        <v-flex>
+                                            <v-flex class="mb-3" style="font-size:30px;font-weight:600;line-height:30px">Media<br>Center</v-flex>
+                                            <v-flex class="mb-5" style="font-size:13px;opacity:.9">지금까지 함께한<br>팩투커스의 기록들</v-flex>
+                                            <v-flex style="font-size:12px;opacity:.9" @click="moveNavigation(2)">VIEW<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
+                                        </v-flex>
+                                    </v-layout>
+                                </v-flex>
+                                <v-flex xs6 class="home_3_1_2">
+                                    <v-layout align-center style="height:100%">
+                                        <v-flex>
+                                            <v-flex class="mb-3" style="font-size:30px;font-weight:600;line-height:30px">Infor<br>mation</v-flex>
+                                            <v-flex class="mb-5" style="font-size:13px;opacity:.9">자세한 사항이<br>궁금하시다면</v-flex>
+                                            <v-flex style="font-size:12px;opacity:.9" @click="moveNavigation(3)">VIEW<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
+                                        </v-flex>
+                                    </v-layout>
+                                </v-flex>
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section home_4">
-                        <v-flex style="text-align:center">
-                            <v-layout>
-                                <v-flex xs6 class="home_4_1"></v-flex>
-                                <v-flex xs6 class="home_4_2"></v-flex>
-                            </v-layout>
-                            <v-flex></v-flex>
-                        </v-flex>
+                    <v-layout class="section fp-auto-height" id="footer">
+                        <Footer/>
                     </v-layout>
                 </full-page>
             </v-flex>
@@ -53,14 +72,40 @@
 
 
 <script>
+import Footer from '@/components/mobile/common/Footer'
+import Header from '@/components/mobile/common/Header'
 export default {
+    components:{
+        Footer,
+        Header
+    },
     data() {
         return {
             options:{
-
             },
         }
     },
+    mounted(){
+        var footer = document.getElementById('footer')
+        footer.style.height=131+'px'
+    },
+    methods:{
+        moveNavigation(number){
+            if(number==1){
+                this.$router.push({
+                    path:'/m/recruitment'
+                })
+            }else if(number ==2){
+                this.$router.push({
+                    path:'/m/mediaCenter'
+                })
+            }else if(number ==3){
+                this.$router.push({
+                    path:'/m/serviceCenter'
+                })
+            }
+        }
+    }
 }
 </script>
 
@@ -75,7 +120,9 @@ export default {
     .home_1 .fp-tableCell{display: flex;align-items: center;width: 100%;}
     .home_2{background-image: url('../../../assets/mobile/img/home/home_2.png'); background-size: cover; background-position: center;color: #fff;}
     .home_2 .fp-tableCell{display: flex;align-items: center;width: 100%;}
-    .home_3{background-image: url('../../../assets/mobile/img/home/home_3.png'); background-size: cover; background-position: center;color: #fff;}
+    .home_3_1{background-image: url('../../../assets/mobile/img/home/home_3.png'); background-size: cover; background-position: center;color: #fff;}
     .home_3 .fp-tableCell{display: flex;align-items: center;width: 100%;}
-    .home_4_1{background-image: url('../../../assets/mobile/img/home/home_4_1.png'); background-size: cover; background-position: center;color: #fff;}
+    .home_3_1_1{background-image: url('../../../assets/mobile/img/home/home_4_1.png'); background-size: cover; background-position: center;color: #fff;}
+    .home_3_1_2{background-image: url('../../../assets/mobile/img/home/home_4_2.png'); background-size: cover; background-position: center;color: #fff;}
+    #footer .fp-tableCell{width: 100%;}
 </style>
