@@ -2,6 +2,9 @@
   <v-app>
     <v-main style="padding:0">
       <router-view/>
+      <v-flex class="quickMenu">
+        <a href="tel:02-6428-0103"><img src="@/assets/mobile/img/icon/phone.png" style="cursor:pointer"></a>
+      </v-flex>
     </v-main>
   </v-app>
 </template>
@@ -12,8 +15,16 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    isMobile:false
   }),
+  created(){
+    // this.mobileCheck()
+  },
+  methods:{
+    // mobileCheck(){
+    //   var pcDevice = "win16|win32|win64|mac|macintel"; 
+    // }
+  }
 };
 </script>
 
@@ -46,4 +57,5 @@ export default {
   *{
     font-family: 'Noto Sans KR', sans-serif;
   }
+  .quickMenu{position: fixed;bottom:12%;right:4%}
 </style>

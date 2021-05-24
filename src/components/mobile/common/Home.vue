@@ -65,6 +65,9 @@
                         <Footer/>
                     </v-layout>
                 </full-page>
+                <v-flex class="quickMenu2">
+                    <img @click="toTheTop" src="@/assets/mobile/img/icon/top.png" style="cursor:pointer">
+                </v-flex>
             </v-flex>
         </v-layout>
     </v-container>
@@ -104,6 +107,9 @@ export default {
                     path:'/m/serviceCenter'
                 })
             }
+        },
+        toTheTop(){
+            this.$refs.fullpage.api.moveTo(1)
         }
     }
 }
@@ -125,4 +131,5 @@ export default {
     .home_3_1_1{background-image: url('../../../assets/mobile/img/home/home_4_1.png'); background-size: cover; background-position: center;color: #fff;}
     .home_3_1_2{background-image: url('../../../assets/mobile/img/home/home_4_2.png'); background-size: cover; background-position: center;color: #fff;}
     #footer .fp-tableCell{width: 100%;}
+    .quickMenu2{position: fixed;bottom:2%;right:4%;}
 </style>
