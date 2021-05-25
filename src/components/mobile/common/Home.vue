@@ -65,7 +65,7 @@
                         <Footer/>
                     </v-layout>
                 </full-page>
-                <v-flex class="quickMenu2">
+                <v-flex class="quickMenu2" v-if="toTop==true">
                     <img @click="toTheTop" src="@/assets/mobile/img/icon/top.png" style="cursor:pointer">
                 </v-flex>
             </v-flex>
@@ -85,7 +85,9 @@ export default {
     data() {
         return {
             options:{
+                afterLoad:this.afterLoad
             },
+            toTop:false
         }
     },
     mounted(){
@@ -93,6 +95,12 @@ export default {
         footer.style.height=131+'px'
     },
     methods:{
+        afterLoad(_,destination){
+            this.toTop=false
+            if(destination.index>0){
+                this.toTop=true
+            }
+        },
         moveNavigation(number){
             if(number==1){
                 this.$router.push({

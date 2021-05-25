@@ -25,6 +25,9 @@
                     </v-flex>
                 </v-layout>
             </v-flex>
+            <v-flex class="quickMenu2">
+                <img @click="toTheTop" src="@/assets/mobile/img/icon/top.png" style="cursor:pointer">
+            </v-flex>
         </v-layout>
         <Footer/>
     </v-container>
@@ -37,6 +40,11 @@ export default {
     components:{
         Header,
         Footer
+    },
+    methods:{
+        toTheTop(){
+            window.scrollTo({top:0,behavior:'smooth'})
+        }
     }
 }
 </script>

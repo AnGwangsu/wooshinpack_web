@@ -128,6 +128,9 @@
                     </v-flex>
                 </v-flex>
             </v-flex>
+            <v-flex class="quickMenu2">
+                <img @click="toTheTop" src="@/assets/mobile/img/icon/top.png" style="cursor:pointer">
+            </v-flex>
         </v-layout>
         <Footer/>
     </v-container>
@@ -164,7 +167,10 @@ export default {
         }
     },
     methods:{
-       onLoad1(map){
+        toTheTop(){
+            window.scrollTo({top:0,behavior:'smooth'})
+        },
+        onLoad1(map){
             this.map1 = map;
             var markerPosition = new kakao.maps.LatLng(37.49794514999162,127.0431446387925)
             var marker = new kakao.maps.Marker({
