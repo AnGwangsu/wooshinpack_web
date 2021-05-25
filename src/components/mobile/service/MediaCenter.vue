@@ -20,6 +20,9 @@
                 <v-flex class="mb-5 px-3" style="font-size:14px;color:#535353">키치너블은 오프라인으로 많이 이루어지는 시공을 직접 전화하지 않고 온라인으로 전환해 소비자들이 보다 편하고 간편하게 주방시공을 견적 할 수 있도록 돕는 서비스입니다.</v-flex>
                 <v-flex class="px-3 mb-15" style="font-size:13px;color:#535353">View More<v-icon class="ml-1">mdi-open-in-new</v-icon></v-flex>
             </v-flex>
+            <v-flex class="quickMenu2">
+                <img @click="toTheTop" src="@/assets/mobile/img/icon/top.png" style="cursor:pointer">
+            </v-flex>
         </v-layout>
         <Footer/>
     </v-container>
@@ -32,6 +35,11 @@ export default {
     components:{
         Header,
         Footer
+    },
+    methods:{
+        toTheTop(){
+            window.scrollTo({top:0,behavior:'smooth'})
+        }
     }
 }
 </script>
