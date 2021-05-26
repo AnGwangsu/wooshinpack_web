@@ -195,7 +195,7 @@ export default {
     data() {
         return {
             items:['회사 소개','CI소개'],
-            selectItem:1,
+            selectItem:0,
         }
     },
 }
