@@ -7,10 +7,10 @@
                         <v-layout class="px-5" align-center style="text-align:center">
                             <v-flex xs3 style="text-align:left"><img src="@/assets/mobile/img/header/header_logo.png" style="cursor:pointer"></v-flex>
                             <v-flex xs6 style="font-size:17px;font-weight:600;color:#fff">
-                                <span class="mx-5" style="cursor:pointer">회사소개</span>
-                                <span class="mx-5" style="cursor:pointer">미디어센터</span>
-                                <span class="mx-5" style="cursor:pointer">인재채용</span>
-                                <span class="mx-5" style="cursor:pointer">고객센터</span>
+                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(2)">회사소개</span>
+                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(3)">미디어센터</span>
+                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(4)">인재채용</span>
+                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(5)">고객센터</span>
                             </v-flex>
                             <v-flex xs3></v-flex>
                         </v-layout>
@@ -23,7 +23,7 @@
                 <v-flex>
                     <full-page ref="fullpage" id="fullpage" :options="options">
                         <v-layout class="section webMain_1">
-                            <v-flex xs10 style="color:#fff">
+                            <v-flex xs10 style="color:#fff;">
                                 <v-flex class="mb-3" style="font-size:65px">
                                     <v-flex style="line-height:1em">함께하는 행복을 위해</v-flex>
                                     <v-flex>더 나은 IT산업을 선도하는 기업</v-flex>
@@ -51,7 +51,7 @@
                                                 <v-flex class="mb-3" style="font-size:60px">Recruitment</v-flex>
                                                 <v-flex class="mb-15" style="font-size:20px">팩투커스와 함께 할 자유로운 인재를 기다립니다.</v-flex>
                                                 <v-layout justify-center>
-                                                    <v-flex xs4 class="py-5" style="border: 2px solid #FFFFFF;border-radius: 57px;cursor:pointer">READ MORE<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
+                                                    <v-flex xs4 class="py-5" @click="moveNavigation(4)" style="border: 2px solid #FFFFFF;border-radius: 57px;cursor:pointer">READ MORE<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
                                                 </v-layout>
                                             </v-flex>
                                         </v-layout>
@@ -62,7 +62,7 @@
                                                 <v-flex style="text-align:center">
                                                     <v-flex class="mb-3" style="font-size:60px">Media Center</v-flex>
                                                     <v-flex class="mb-8" style="font-size:20px">지금까지 함께한 팩투커스의 기록들</v-flex>
-                                                    <v-flex style="font-size:14px;opacity:.8;cursor:pointer">VIEW<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
+                                                    <v-flex style="font-size:14px;opacity:.8;cursor:pointer"><span @click="moveNavigation(3)">VIEW<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></span></v-flex>
                                                 </v-flex>
                                             </v-layout>
                                         </v-flex>
@@ -71,7 +71,7 @@
                                                 <v-flex style="text-align:center">
                                                     <v-flex class="mb-3" style="font-size:60px">Information</v-flex>
                                                     <v-flex class="mb-8" style="font-size:20px">자세한 사항이 궁금하시다면</v-flex>
-                                                    <v-flex style="font-size:14px;opacity:.8;cursor:pointer">VIEW<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></v-flex>
+                                                    <v-flex style="font-size:14px;opacity:.8;cursor:pointer"><span @click="moveNavigation(5)">VIEW<span><img class="ml-2 py-1" src="@/assets/mobile/img/home/arrow.png"></span></span></v-flex>
                                                 </v-flex>
                                             </v-layout>
                                         </v-flex>
@@ -99,7 +99,9 @@ export default {
     data() {
         return {
             options:{
-                
+                licenseKey:null,
+                navigation: true,
+                navigationPosition:'right'
             },
         }
     },
@@ -107,6 +109,27 @@ export default {
         var footer = document.getElementById('footer')
         footer.style.height=135+'px'
     },
+    methods:{
+        moveNavigation(number){
+            if(number==2){
+                this.$router.push({
+                    path:'/introduce'
+                })
+            }else if(number==3){
+                this.$router.push({
+                    path:'/mediaCenter'
+                })
+            }else if(number==4){
+                this.$router.push({
+                    path:'/recruitment'
+                })
+            }else if(number==5){
+                this.$router.push({
+                    path:'/serviceCenter'
+                })
+            }
+        }
+    }
 }
 </script>
 
@@ -120,7 +143,7 @@ export default {
     }
     .webMain_1{background-image: url('../../../assets/web/img/home/webMain_1.png'); background-size: cover; background-position: center;color: #fff;position: relative;}
     .webMain_1 .fp-tableCell{display: flex;align-items: center;width: 100%;justify-content: center;}
-    .webHome_wrap{min-width:1264px;}
+    .webHome_wrap{min-width:1264px;font-family:'Nanum Barun Gothic',sans-serif;}
     .webMain_2{background-image: url('../../../assets/web/img/home/webMain_2_1.png'); background-size: cover; background-position: center;color: #fff;}
     .webMain_2 .fp-tableCell{display: flex;align-items: flex-end;width: 100%;}
     .webMain_3 .fp-tableCell{width: 100%;height: 100%;}
@@ -128,4 +151,7 @@ export default {
     .webMain_3_2{background-image: url('../../../assets/web/img/home/webMain_3_2.png'); background-size: cover; background-position: center;color: #fff;height: 50%;}
     .webMain_3_3{background-image: url('../../../assets/web/img/home/webMain_3_3.png'); background-size: cover; background-position: center;color: #fff;height: 50%;}
     #footer .fp-tableCell{width: 100%;}
+    #fp-nav ul li a span{
+     background:#fff;
+    }
 </style>
