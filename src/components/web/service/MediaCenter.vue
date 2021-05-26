@@ -25,7 +25,7 @@
                         <v-flex xs3 lg2 style="background:rgba(29,123,162,.2);height:20px;"></v-flex>
                     </v-layout>
                 </v-flex>
-                <v-flex class="mb-10" style="text-align:center;font-size:16px">
+                <v-flex class="mb-10" style="text-align:center;font-size:15px">
                     <v-flex>키치너블은 오프라인으로 많이 이루어지는 시공을 직접 전화하지 않고 온라인으로 전환하여<br>소비자들이 보다 편하고 간편하게 주방시공을 견적 할 수 있도록 돕는 서비스입니다.</v-flex>
                 </v-flex>
                 <v-flex class="px-3 mb-15" style="font-size:14px;color:#535353;text-align:center;"><span style="cursor:pointer">View More<v-icon class="ml-1">mdi-open-in-new</v-icon></span></v-flex>

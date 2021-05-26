@@ -27,11 +27,11 @@
                 <!--회사 소개-->
                 <v-flex v-if="selectItem==0" class="mt-15">
                     <v-layout class="mb-10" justify-center style="position:relative;height:670px">
-                        <v-flex style="height:300px;width:500px;background:#1D7BA2;position:absolute;left:0;bottom:0;z-index:0"></v-flex>
+                        <v-flex style="height:300px;width:500px;background:#1D7BA2;position:absolute;left:0;bottom:5%;z-index:0"></v-flex>
                         <v-flex xs8 style="z-index:1">
                             <v-flex class="mb-2" style="font-size:35px;font-weight:600">CEO 인사말</v-flex>
                             <v-layout>
-                                <v-flex xs4 class="mr-5" style="height:500px;"><img src="@/assets/web/img/introduce/introduce_web_2.png" width="100%" height="100%"></v-flex>
+                                <v-flex xs4 class="mr-5" style="height:450px;"><img src="@/assets/web/img/introduce/introduce_web_2.png" width="100%" height="100%"></v-flex>
                                 <v-flex xs8>
                                     <v-flex class="mb-5">
                                         <v-flex style="font-size:25px;font-weight:700"><span style="opacity:.2">"</span>언제나<span style="color:#1D7BA2">고객의 소리</span>가 최우선인</v-flex>
@@ -56,7 +56,7 @@
                     <v-layout justify-center class="mb-5">
                         <v-flex xs8>
                             <v-flex class="mb-2" style="font-size:35px;font-weight:600">협력 기업</v-flex>
-                            <v-layout>
+                            <v-layout align-center>
                                 <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:120px">
                                     <img src="@/assets/web/img/introduce/partner1.png" width="100%" height="100%">
@@ -78,7 +78,7 @@
                                     </v-flex>
                                 </v-flex>
                             </v-layout>
-                            <v-layout>
+                            <v-layout align-center>
                                 <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:120px">
                                     <img src="@/assets/web/img/introduce/partner5.png" width="100%" height="100%">
@@ -100,7 +100,7 @@
                                     </v-flex>
                                 </v-flex>
                             </v-layout>
-                            <v-layout>
+                            <v-layout align-center>
                                 <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:120px">
                                     <img src="@/assets/web/img/introduce/partner9.png" width="100%" height="100%">
@@ -127,7 +127,57 @@
                     <v-flex class="introduce_web_3"></v-flex>
                 </v-flex>
 
-
+                <!--CI소개-->
+                <v-flex v-else class="my-15">
+                    <v-layout justify-center>
+                        <v-flex xs8>
+                            <v-flex class="mb-2" style="font-size:35px;font-weight:600">CI소개</v-flex>
+                            <v-layout class="mb-10">
+                                <v-flex class="mr-2" xs6 style="height:250px">
+                                    <img src="@/assets/web/img/introduce/CI_1.png" width="100%" height="100%">
+                                </v-flex>
+                                <v-flex class="ml-2" xs6 style="height:250px">
+                                    <img src="@/assets/web/img/introduce/CI_2.png" width="100%" height="100%">
+                                </v-flex>
+                            </v-layout>
+                            <v-flex class="mb-5 px-3">
+                                <v-layout justify-center>
+                                    <v-flex xs3 lg3 style="font-size:23px;font-weight:500;line-height:0;text-align:center;letter-spacing:1px" class="font-change">팩투커스의 "멋"</v-flex>
+                                </v-layout>
+                                <v-layout justify-center>
+                                    <v-flex xs3 lg2 style="background:rgba(29,123,162,.2);height:20px;"></v-flex>
+                                </v-layout>
+                            </v-flex>
+                            <v-flex class="mb-15" style="text-align:center;font-size:15px">
+                                <v-flex>팩투커스의 CI는 "Factory To Customer"의 약자인 F와 C를 형상화 하여<br>4차산업을 선도하는 IT 기업의 기하학적인 "멋"을 표현한 디자인입니다.</v-flex>
+                            </v-flex>
+                            <v-flex class="mb-2" style="font-size:35px;font-weight:600">상징 컬러</v-flex>
+                            <v-layout>
+                                <v-flex xs4 class="mr-2">
+                                    <v-flex class="mb-5" style="height:137px;background:#1D7BA2"></v-flex>
+                                    <v-layout align-center class="mb-5">
+                                        <v-flex style="font-size:25px;font-weight:700">Evening Azure</v-flex>
+                                        <v-flex style="font-size:15px;opacity:.5;text-align:right">C 82 M 46 Y 28 K 0</v-flex>
+                                    </v-layout>
+                                </v-flex>
+                                <v-flex xs4 class="mx-2">
+                                    <v-flex class="mb-5" style="height:137px;background:#1B546E"></v-flex>
+                                    <v-layout align-center class="mb-5">
+                                        <v-flex style="font-size:25px;font-weight:700">Classic blue</v-flex>
+                                        <v-flex style="font-size:15px;opacity:.5;text-align:right">C 91 M 68 Y 48 K 8</v-flex>
+                                    </v-layout>   
+                                </v-flex>
+                                <v-flex xs4 class="ml-2">
+                                    <v-flex class="mb-5" style="height:137px;background:#292929"></v-flex>
+                                    <v-layout align-center class="mb-5">
+                                        <v-flex style="font-size:25px;font-weight:700">Black</v-flex>
+                                        <v-flex style="font-size:15px;opacity:.5;text-align:right">C 81 M 76 Y 74 K 54</v-flex>
+                                    </v-layout>    
+                                </v-flex>
+                            </v-layout>
+                        </v-flex>
+                    </v-layout>
+                </v-flex>
             </v-flex>
         </v-layout>
         <Footer/>
@@ -145,7 +195,7 @@ export default {
     data() {
         return {
             items:['회사 소개','CI소개'],
-            selectItem:0,
+            selectItem:1,
         }
     },
 }
