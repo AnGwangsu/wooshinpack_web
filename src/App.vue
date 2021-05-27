@@ -37,17 +37,6 @@ export default {
         }
       }   
     },
-
-
-
-    // handleResize(){
-    //   this.window.width=window.innerWidth
-    // },
-    // windowPx(){
-    //   var main = document.getElementById('main')
-    //   main.style.width=this.window.width+'px'
-    //   console.log(this.window.width)
-    // }
   }
 };
 </script>

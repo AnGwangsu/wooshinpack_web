@@ -85,7 +85,8 @@ export default {
     data() {
         return {
             options:{
-                afterLoad:this.afterLoad
+                afterLoad:this.afterLoad,
+                autoScrolling:false
             },
             toTop:false
         }
@@ -124,7 +125,7 @@ export default {
 </script>
 
 <style>
-    .scroll_container{margin-top: 20px;}
+    .scroll_container{margin-top: 10px;}
     .scroll_icon{animation: motion 0.6s linear 0s infinite alternate;margin-top: 0;}
     @keyframes motion {
         0% {margin-top: 0px;}

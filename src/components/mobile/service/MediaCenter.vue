@@ -1,7 +1,7 @@
 <template>
     <v-container fluid style="padding:0;height:100%;display:flex;flex-direction:column">
         <Header/>
-        <v-layout style="flex:1">
+        <v-layout style="flex:1;overflow:hidden">
             <v-flex>
                 <v-layout align-end class="mediaCenter_1">
                     <v-flex class="px-4 mb-5">
@@ -11,7 +11,7 @@
                 </v-layout>
                 <v-flex class="mb-10">
                     <v-flex class="mt-10 px-3" style="font-size:18px;font-weight:600">브랜드 소개</v-flex>
-                    <v-flex><img src="@/assets/mobile/img/mediaCenter/mediaCenter_2.png"></v-flex>
+                    <v-flex><img src="@/assets/mobile/img/mediaCenter/mediaCenter_2.png" width="100%"></v-flex>
                 </v-flex>
                 <v-flex class="mb-5 px-3">
                     <v-flex xs7 style="font-size:18px;font-weight:400;line-height:0;text-align:center" class="font-change">주방시공 도우미 "키치너블"</v-flex>
