@@ -1,7 +1,7 @@
 <template>
     <v-container fluid style="padding:0;display:flex;flex-direction:column;height:100%">
         <Header/>
-        <v-layout style="flex:1">
+        <v-layout style="flex:1;">
             <v-flex>
                 <v-layout align-end class="introduce_1">
                     <v-flex class="px-4 mb-5">
@@ -40,7 +40,7 @@
                             </v-layout>
                         </v-flex>    
                         <v-flex class="mb-5" style="font-size:18px;font-weight:600">협력 기업</v-flex>
-                        <v-layout row class="pl-2 mb-2">
+                        <v-layout class="pl-2 mb-2">
                             <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:57px">
                                     <img src="@/assets/mobile/img/introduce/partner1.png">
@@ -48,14 +48,16 @@
                             </v-flex>
                             <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:57px">
-                                    <img src="@/assets/mobile/img/introduce/partner2.png">
+                                    <img src="@/assets/mobile/img/introduce/partner3.png">
                                 </v-flex>
                             </v-flex>
                             <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:57px">
-                                    <img src="@/assets/mobile/img/introduce/partner3.png">
+                                    <img src="@/assets/mobile/img/introduce/partner9.png">
                                 </v-flex>
                             </v-flex>
+                        </v-layout>
+                        <v-layout>    
                             <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:57px">
                                     <img src="@/assets/mobile/img/introduce/partner4.png">
@@ -71,6 +73,8 @@
                                     <img src="@/assets/mobile/img/introduce/partner6.png">
                                 </v-flex>
                             </v-flex>
+                        </v-layout>
+                        <v-layout>    
                             <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:57px">
                                     <img src="@/assets/mobile/img/introduce/partner7.png">
@@ -83,7 +87,7 @@
                             </v-flex>
                             <v-flex xs4 class="mb-2">
                                 <v-flex class="mr-2" style="height:57px">
-                                    <img src="@/assets/mobile/img/introduce/partner9.png">
+                                    <img src="@/assets/mobile/img/introduce/partner10.png">
                                 </v-flex>
                             </v-flex>
                         </v-layout>

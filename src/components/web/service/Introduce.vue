@@ -58,13 +58,8 @@
                             <v-flex class="mb-2" style="font-size:35px;font-weight:600">협력 기업</v-flex>
                             <v-layout align-center>
                                 <v-flex xs4 class="mb-2">
-                                <v-flex class="mr-2" style="height:120px">
-                                    <img src="@/assets/web/img/introduce/partner1.png" width="100%" height="100%">
-                                </v-flex>
-                                </v-flex>
-                                <v-flex xs4 class="mb-2">
                                     <v-flex class="mr-2" style="height:120px">
-                                        <img src="@/assets/web/img/introduce/partner2.png" width="100%" height="100%">
+                                        <img src="@/assets/web/img/introduce/partner2.jpg" width="100%" height="100%">
                                     </v-flex>
                                 </v-flex>
                                 <v-flex xs4 class="mb-2">
@@ -75,6 +70,11 @@
                                 <v-flex xs4 class="mb-2">
                                     <v-flex class="mr-2" style="height:120px">
                                         <img src="@/assets/web/img/introduce/partner4.png" width="100%" height="100%">
+                                    </v-flex>
+                                </v-flex>
+                                <v-flex xs4 class="mb-2">
+                                    <v-flex class="mr-2" style="height:120px">
+                                        <img src="@/assets/web/img/introduce/partner7.png" width="100%" height="100%">
                                     </v-flex>
                                 </v-flex>
                             </v-layout>
@@ -91,21 +91,16 @@
                                 </v-flex>
                                 <v-flex xs4 class="mb-2">
                                     <v-flex class="mr-2" style="height:120px">
-                                        <img src="@/assets/web/img/introduce/partner7.png" width="100%" height="100%">
+                                        <img src="@/assets/web/img/introduce/partner8.png" width="100%" height="100%">
                                     </v-flex>
                                 </v-flex>
                                 <v-flex xs4 class="mb-2">
                                     <v-flex class="mr-2" style="height:120px">
-                                        <img src="@/assets/web/img/introduce/partner8.png" width="100%" height="100%">
+                                        <img src="@/assets/web/img/introduce/partner9.png" width="100%" height="100%">
                                     </v-flex>
                                 </v-flex>
                             </v-layout>
                             <v-layout align-center>
-                                <v-flex xs4 class="mb-2">
-                                <v-flex class="mr-2" style="height:120px">
-                                    <img src="@/assets/web/img/introduce/partner9.png" width="100%" height="100%">
-                                </v-flex>
-                                </v-flex>
                                 <v-flex xs4 class="mb-2">
                                     <v-flex class="mr-2" style="height:120px">
                                         <img src="@/assets/web/img/introduce/partner10.png" width="100%" height="100%">
@@ -114,6 +109,11 @@
                                 <v-flex xs4 class="mb-2">
                                     <v-flex class="mr-2" style="height:120px">
                                         <img src="@/assets/web/img/introduce/partner11.png" width="100%" height="100%">
+                                    </v-flex>
+                                </v-flex>
+                                <v-flex xs4 class="mb-2">
+                                    <v-flex class="mr-2" style="height:120px">
+                                        <img src="@/assets/web/img/introduce/partner1.jpg" width="100%" height="100%">
                                     </v-flex>
                                 </v-flex>
                                 <v-flex xs4 class="mb-2">

@@ -107,7 +107,7 @@ export default {
     },
     mounted(){
         var footer = document.getElementById('footer')
-        footer.style.height=135+'px'
+        footer.style.height=241+'px'
     },
     methods:{
         moveNavigation(number){

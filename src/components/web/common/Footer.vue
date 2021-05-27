@@ -1,9 +1,13 @@
 <template>
-    <v-container class="pa-5" fluid style="padding:0;background:#131313;color:#fff;height:135px;min-width:1264px">
+    <v-container class="pa-5" fluid style="padding:0;background:#131313;color:#fff;height:241px;min-width:1264px">
         <v-layout class="px-10" align-center style="height:100%">
-            <v-flex class="mb-3" style="text-align:left;font-size:15px">
-                <v-flex class="mb-3">팩투커스 주식회사</v-flex>
-                <v-flex style="opacity:.6">COPYRIGHT(C) (주)팩투커스 . ALL RIGHTS RESERVED.</v-flex>
+            <v-flex class="mb-3" style="text-align:left;">
+                <v-flex class="mb-1" style="font-size:15px">Technical Service Center</v-flex>
+                <v-flex class="mb-3" style="font-size:20px;font-weight:600">02)6428-0103</v-flex>
+                <v-flex style="font-size:15px;">
+                    <v-flex class="mb-2" style="opacity:.6">우편번호: 06225 서울특별시 강남구 역삼동 732-18 3층 팩투커스 대표 송승엽</v-flex>
+                    <v-flex style="opacity:.6">COPYRIGHT(C) (주)팩투커스 . ALL RIGHTS RESERVED.</v-flex>
+                </v-flex>
             </v-flex>
             <v-flex style="text-align:right"><img src="@/assets/web/img/icon/logo_white_web.png"></v-flex>
         </v-layout>
