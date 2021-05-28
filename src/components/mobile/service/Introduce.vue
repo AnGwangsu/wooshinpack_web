@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid style="padding:0;display:flex;flex-direction:column;height:100%">
+    <v-container fluid style="padding:0;display:flex;flex-direction:column;height:100%;overflow:hidden">
         <Header/>
         <v-layout style="flex:1;">
             <v-flex>
@@ -33,9 +33,9 @@
                         <v-flex class="mb-4" style="font-size:13px;text-align:right">
                             <v-layout justify-end align-center>
                                 <v-flex>팩투커스 CEO </v-flex>
-                                <v-flex xs3 class="ml-3" style="font-size:23px;font-weight:600;text-align:left">
-                                    <v-flex class="mt-5" style="line-height:0;">송승엽</v-flex>
-                                    <v-flex><img class="ml-4" style="z-index:999" src="@/assets/mobile/img/introduce/sign.png"></v-flex>
+                                <v-flex xs3 class="ml-3" style="font-size:23px;font-weight:600;text-align:left;position:relative">
+                                    <v-flex style="z-index:100">송승엽</v-flex>
+                                    <v-flex style="position:absolute;top:20%"><img style="z-index:0" src="@/assets/mobile/img/introduce/sign.png" width="100%" height="100%"></v-flex>
                                 </v-flex>
                             </v-layout>
                         </v-flex>    

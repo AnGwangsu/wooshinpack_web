@@ -7,13 +7,13 @@
                     <v-flex xs8></v-flex>
                     <v-flex xs4>팩투커스 > 브랜드소개</v-flex>
                 </v-layout>
-                <v-layout align-center justify-center class="mediaCenter_web_1 mb-10">
+                <v-layout align-center justify-center class="mediaCenter_web_1">
                     <v-flex xs8>
                         <v-flex class="mb-2" style="font-size:35px">미디어센터</v-flex>
                         <v-flex style="font-size:17px;opacity:.9">기업과 소비자가 함께 살아가는 사회를 만드는<br>상생기업 팩투커스 입니다.</v-flex>
                     </v-flex>
                 </v-layout>
-                <v-layout class="mt-15" justify-center>
+                <v-layout class="mt-15 pt-15" justify-center>
                     <v-flex xs8 class="mb-3" style="font-size:35px;font-weight:600">브랜드 소개</v-flex>
                 </v-layout>
                 <v-flex class="mediaCenter_web_2 mb-10"></v-flex>
@@ -28,7 +28,7 @@
                 <v-flex class="mb-10" style="text-align:center;font-size:15px">
                     <v-flex>키치너블은 오프라인으로 많이 이루어지는 시공을 직접 전화하지 않고 온라인으로 전환하여<br>소비자들이 보다 편하고 간편하게 주방시공을 견적 할 수 있도록 돕는 서비스입니다.</v-flex>
                 </v-flex>
-                <v-flex class="px-3 mb-15" style="font-size:14px;color:#535353;text-align:center;"><span style="cursor:pointer">View More<v-icon class="ml-1">mdi-open-in-new</v-icon></span></v-flex>
+                <v-flex class="px-3 mb-15 pb-15" style="font-size:14px;color:#535353;text-align:center;"><a href="https://kitchenable.co.kr/" style="text-decoration:none;color:#000" target="_blank"><span style="cursor:pointer">View More<v-icon class="ml-1">mdi-open-in-new</v-icon></span></a></v-flex>
             </v-flex>
         </v-layout>
         <Footer/>

@@ -13,7 +13,7 @@
                         <v-flex style="font-size:17px;opacity:.9">팩투커스와 추구하는 기업 이념과<br>앞으로의 길에 함께 할 자유로운 인재를 기다립니다.</v-flex>
                     </v-flex>
                 </v-layout>
-                <v-layout justify-center class="my-15">
+                <v-layout justify-center class="my-15 py-15">
                     <v-flex xs8>
                         <v-flex class="mb-3" style="font-size:35px;font-weight:600">팩투커스가 목표하는 방향성</v-flex>
                         <v-layout>
@@ -52,7 +52,7 @@
                         </v-layout>
                     </v-flex>
                 </v-layout>
-                <v-layout align-center justify-center class="recruitment_web_3 mb-15">
+                <v-layout align-center justify-center class="recruitment_web_3 my-15">
                     <v-flex xs7>
                         <v-flex class="mb-10" style="font-size:30px">복지제도</v-flex>
                         <v-layout>
@@ -79,14 +79,14 @@
                     </v-flex>
                 </v-layout>
                 <v-layout justify-center>
-                    <v-flex xs7>
+                    <v-flex xs7 class="my-15">
                         <v-flex class="mb-3" style="font-size:35px;font-weight:600">팩투커스 사옥</v-flex>
-                        <v-flex class="mb-10">
+                        <v-flex class="mb-15">
                             <v-carousel hide-delimiters height="500px" show-arrows-on-hover>
                                 <v-carousel-item v-for="(item,index) in items" :key="index" :src="item" transition="fade-transition"></v-carousel-item>
                             </v-carousel>
                         </v-flex>
-                        <v-flex class="mb-3" style="font-size:35px;font-weight:600">오시는 길</v-flex>
+                        <v-flex class="my-3" style="font-size:35px;font-weight:600">오시는 길</v-flex>
                         <v-layout class="mb-15">
                             <v-flex xs6 class="mr-2">
                                 <vue-daum-map

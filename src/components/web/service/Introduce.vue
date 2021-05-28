@@ -31,8 +31,8 @@
                         <v-flex xs8 style="z-index:1">
                             <v-flex class="mb-2" style="font-size:35px;font-weight:600">CEO 인사말</v-flex>
                             <v-layout>
-                                <v-flex xs4 class="mr-5" style="height:450px;"><img src="@/assets/web/img/introduce/introduce_web_2.png" width="100%" height="100%"></v-flex>
-                                <v-flex xs8>
+                                <v-flex xs5 lg4 class="pr-10" style="min-height:450px"><img src="@/assets/web/img/introduce/introduce_web_2.png" width="100%" height="100%"></v-flex>
+                                <v-flex xs7 lg8>
                                     <v-flex class="mb-5">
                                         <v-flex style="font-size:25px;font-weight:700"><span style="opacity:.2">"</span>언제나<span style="color:#1D7BA2">고객의 소리</span>가 최우선인</v-flex>
                                         <v-flex style="font-size:25px;font-weight:700" class="ml-4">브랜드로 성장하겠습니다.<span style="opacity:.2">"</span></v-flex>
@@ -44,8 +44,8 @@
                                         <v-flex>감사합니다.</v-flex>
                                         <v-layout justify-end align-center>
                                             <v-flex style="text-align:left;position:relative">
-                                                <v-flex class="mt-5">-팩투커스 CEO 송승엽</v-flex>
-                                                <img class="ml-15 pl-8" src="@/assets/mobile/img/introduce/sign.png" style="position:absolute;bottom:-10px">
+                                                <v-flex class="mt-5" style="z-index:1">-팩투커스 CEO 송승엽</v-flex>
+                                                <img class="ml-15 pl-8" src="@/assets/mobile/img/introduce/sign.png" style="position:absolute;bottom:-15px;z-index:0">
                                             </v-flex>
                                         </v-layout>
                                     </v-flex>
