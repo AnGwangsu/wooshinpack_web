@@ -104,7 +104,7 @@
                                     <v-flex>
                                         <v-layout style="font-size:14px">
                                             <v-flex xs2 style="font-weight:600">주소</v-flex>
-                                            <v-flex xs10>서울특별시 강남구 역삼로247(역삼동,홍진빌딩 3층)</v-flex>
+                                            <v-flex xs10>서울특별시 강남구 역삼로 169(팁스타운S2,314호)</v-flex>
                                         </v-layout>
                                         <v-layout style="font-size:14px">
                                             <v-flex xs2 style="font-weight:600">전화</v-flex>
@@ -167,7 +167,7 @@ export default {
                 require('../../../assets/mobile/img/recruitment/recruitment_4_4.png'),
             ],
             appKey: config.appKey,
-            center1: {lat:37.49794514999162, lng:127.0431446387925}, // 지도의 중심 좌표
+            center1: {lat:37.49555188548701, lng:127.03753862624681}, // 지도의 중심 좌표
             center2: {lat:37.51776051412542, lng:127.16075703609316}, // 지도의 중심 좌표
             level1: 2, // 지도의 레벨(확대, 축소 정도),
             level2: 2,
@@ -180,7 +180,7 @@ export default {
     methods:{
       onLoad1(map){
             this.map1 = map;
-            var markerPosition = new kakao.maps.LatLng(37.49794514999162,127.0431446387925)
+            var markerPosition = new kakao.maps.LatLng(37.49555188548701,127.03753862624681)
             var marker = new kakao.maps.Marker({
                 position: markerPosition,
             })

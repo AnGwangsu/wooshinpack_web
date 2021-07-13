@@ -2,9 +2,9 @@
   <v-app>
     <v-main style="padding:0;">
       <router-view/>
-      <!-- <v-flex class="quickMenu" v-if="isMobile==true">
+      <v-flex class="quickMenu" v-if="isMobile==true">
         <a href="tel:02-6428-0103"><img src="@/assets/mobile/img/icon/phone.png" style="cursor:pointer"></a>
-      </v-flex> -->
+      </v-flex>
     </v-main>
   </v-app>
 </template>
@@ -17,27 +17,27 @@ export default {
   data: () => ({
     isMobile:false,
   }),
-  // created(){
-  //   this.mobileCheck()
-  // },
-  // methods:{
-  //   mobileCheck(){
-  //     var pcDevice = "win16|win32|win64|mac|macintel";
-  //     if ( navigator.platform ) {
-  //       if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-  //           this.isMobile=true
-  //           this.$router.push({
-  //             path:'/m'
-  //           })
-  //       } else {
-  //         this.isMobile=false
-  //           this.$router.push({
-  //             path:'/'
-  //           })
-  //       }
-  //     }   
-  //   },
-  // }
+  created(){
+    this.mobileCheck()
+  },
+  methods:{
+    mobileCheck(){
+      var pcDevice = "win16|win32|win64|mac|macintel";
+      if ( navigator.platform ) {
+        if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+            this.isMobile=true
+            this.$router.push({
+              path:'/m'
+            })
+        } else {
+          this.isMobile=false
+            this.$router.push({
+              path:'/'
+            })
+        }
+      }   
+    },
+  }
 };
 </script>
 
