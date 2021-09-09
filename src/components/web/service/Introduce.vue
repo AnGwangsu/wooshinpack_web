@@ -3,14 +3,10 @@
         <Header/>
         <v-layout style="flex:1" class="introduce_web mt-15">
             <v-flex class="mt-10">
-                <v-layout class="mb-5" style="font-size:13px">
-                    <v-flex xs8></v-flex>
-                    <v-flex xs4>팩투커스 > 회사소개</v-flex>
-                </v-layout>
                 <v-layout align-center justify-center class="introduce_web_1 mb-10">
                     <v-flex xs8>
                         <v-flex class="mb-2" style="font-size:35px">회사소개</v-flex>
-                        <v-flex style="font-size:17px;opacity:.9">팩투커스는 주방가구에서 시작되는 모든 것을<br>고객의 라이프 스타일에 맞추어 제작하는 생활공간기업입니다.</v-flex>
+                        <v-flex style="font-size:17px;opacity:.9">우신팩은 문화를 창출하는 인쇄산업과<br>혁시을 이끄는 선구기업입니다.</v-flex>
                     </v-flex>
                 </v-layout>
                 <v-layout class="mt-15" justify-center>

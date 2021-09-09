@@ -5,11 +5,11 @@
                 <v-layout>
                     <v-flex>
                         <v-layout class="px-5" align-center style="text-align:center">
-                            <v-flex xs3 style="text-align:left"><img src="@/assets/mobile/img/header/header_logo.png" style="cursor:pointer"></v-flex>
+                            <v-flex xs3 style="text-align:left"><img src="@/assets/web/img/header/header_web.png" style="cursor:pointer"></v-flex>
                             <v-flex xs6 style="font-size:17px;font-weight:600;color:#fff">
                                 <span class="mx-5" style="cursor:pointer" @click="moveNavigation(2)">회사소개</span>
-                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(3)">미디어센터</span>
-                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(4)">인재채용</span>
+                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(3)">인증서</span>
+                                <span class="mx-5" style="cursor:pointer" @click="moveNavigation(4)">제품소개</span>
                                 <span class="mx-5" style="cursor:pointer" @click="moveNavigation(5)">고객센터</span>
                             </v-flex>
                             <v-flex xs3></v-flex>
@@ -24,14 +24,16 @@
                     <full-page ref="fullpage" id="fullpage" :options="options">
                         <v-layout class="section webMain_1">
                             <v-flex xs10 style="color:#fff;">
-                                <v-flex class="mb-3" style="font-size:65px">
-                                    <v-flex style="line-height:1em">함께하는 행복을 위해</v-flex>
-                                    <v-flex>더 나은 IT산업을 선도하는 기업</v-flex>
+                                <v-flex class="mb-3">
+                                    <v-flex class="mb-5" style="line-height:1em;font-size:60px">"최고의 품질, 최고의 가치"</v-flex>
+                                    <v-flex style="font-size:40px">
+                                        <v-flex class="mb-5"><span style="color:#56dbf9;font-weight:600">최상의 패키지 인쇄 솔루션 서비스</span>를</v-flex>
+                                        <v-flex>제공해드립니다.</v-flex>
+                                    </v-flex>
                                 </v-flex>    
-                                <v-flex style="font-size:25px">팩투커스는 고객에게 더욱 편한 온라인 활동을 위해 노력할 것을 약속합니다.</v-flex>
                             </v-flex>
                             <v-flex class="scroll_animation_container" style="position:absolute;bottom:3%;">
-                                <img class="scroll_animation" src="@/assets/web/img/icon/scroll_icon.png">
+                                <img class="scroll_animation" src="@/assets/web/img/icon/scroll_icon.png" width="50" height="50" style="opacity:.5">
                             </v-flex>
                         </v-layout>
                         <v-layout class="section webMain_2">
@@ -141,7 +143,7 @@ export default {
         0% {margin-bottom: 0px;}
         100% {margin-bottom: 10px;}
     }
-    .webMain_1{background-image: url('../../../assets/web/img/home/webMain_1.png'); background-size: cover; background-position: center;color: #fff;position: relative;}
+    .webMain_1{background-image: url('../../../assets/web/img/home/webMain_1.jpeg'); background-size: cover; background-position: center;color: #fff;position: relative;}
     .webMain_1 .fp-tableCell{display: flex;align-items: center;width: 100%;justify-content: center;}
     .webHome_wrap{min-width:1264px;font-family:'Nanum Barun Gothic',sans-serif;}
     .webMain_2{background-image: url('../../../assets/web/img/home/webMain_2_1.png'); background-size: cover; background-position: center;color: #fff;}

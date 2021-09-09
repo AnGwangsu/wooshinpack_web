@@ -7,8 +7,8 @@
                         <v-flex xs3 style="text-align:left"><img @click="moveNavigation(1)" src="@/assets/web/img/header/header_web.png" style="cursor:pointer"></v-flex>
                         <v-flex xs6 style="font-size:17px;font-weight:600">
                             <span class="mx-5" style="cursor:pointer" @click="moveNavigation(2)">회사소개</span>
-                            <span class="mx-5" style="cursor:pointer" @click="moveNavigation(3)">미디어센터</span>
-                            <span class="mx-5" style="cursor:pointer" @click="moveNavigation(4)">인재채용</span>
+                            <span class="mx-5" style="cursor:pointer" @click="moveNavigation(3)">인증서</span>
+                            <span class="mx-5" style="cursor:pointer" @click="moveNavigation(4)">제품소개</span>
                             <span class="mx-5" style="cursor:pointer" @click="moveNavigation(5)">고객센터</span>
                         </v-flex>
                         <v-flex xs3></v-flex>
